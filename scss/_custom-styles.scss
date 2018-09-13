@@ -1,2 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:500,600');
 // Your custom styles
-footer.page-footer {}
+html,
+body,
+header,
+.jarallax {
+    height: 700px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* PARALAX */
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 560px) and (max-width: 650px) {
+    header .jarallax h1 {
+        margin-bottom: .5rem !important;
+    }
+    header .jarallax h5 {
+        margin-bottom: .5rem !important;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 700px) {
+    header .jarallax h1 {
+        margin-bottom: 1.5rem !important;
+    }
+    header .jarallax h5 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+
+/* Navbar */
+
+.navbar {
+    box-shadow: none!important;
+}
+
+.top-nav-collapse {
+    background-color: $grey-qc;
+    /* background-image: linear-gradient(120deg, #f15a24 0%, #f7931e 50%, #fbb03b 100%); */
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: $grey-qc !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: $grey-qc !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: $grey-qc!important;
+    }
+}
+
+
+/* FOOTER */
+
+footer.page-footer {
+    background-color: $grey-qc;
+}
+
+.input-header {
+    border-bottom: 1px solid white!important;
+    color: white!important;
+    &:focus:not([readonly]) {
+        box-shadow: 0 1px 0 0 white!important;
+        ;
+        border-bottom: 1px solid white!important;
+        ;
+        // Focused label style
+        +label {
+            color: white!important;
+            ;
+        }
+    }
+}
+
+*::-webkit-input-placeholder {
+    color: white!important;
+    font-size: 14.5px;
+}
+
+:-moz-input-placeholder {
+    color: white!important;
+    font-size: 14.5px;
+}
+
+:-moz-placeholder {
+    color: white!important;
+    font-size: 14.5px;
+}
+
+::-moz-placeholder {
+    color: white!important;
+    font-size: 14.5px;
+}
+
+:-ms-input-placeholder {
+    color: white!important;
+}
+
+::-ms-input-placeholder {
+    color: white!important;
+    font-size: 14.5px;
+}
