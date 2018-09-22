@@ -1,3 +1,9 @@
-// Your custom variables
-$grey-qc: #333333;
-$orange-qc: #f7931e;
+// Your Color and gradient
+$grey-qc: #2f3542;
+$grey-2-qc: #57606f;
+$orange-qc: #ff6348;
+$orange-2-qc: #ff7f50;
+$orange-3-qc: #ffa502;
+@mixin gradient-qc {
+    background: linear-gradient(to 180deg, $orange-qc, $orange-2-qc)!important;
+}
