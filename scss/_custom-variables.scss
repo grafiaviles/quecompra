@@ -1,9 +1,14 @@
 // Your Color and gradient
 $grey-qc: #2f3542;
+$grey-qc-o: rgba(47, 53, 66, 0.9);
 $grey-2-qc: #57606f;
 $orange-qc: #ff6348;
 $orange-2-qc: #ff7f50;
 $orange-3-qc: #ffa502;
 @mixin gradient-qc {
     background: linear-gradient(to 180deg, $orange-qc, $orange-2-qc)!important;
+}
+
+@mixin gradient-qc-o {
+    background: linear-gradient(to -90deg, $orange-qc, rgba(255, 166, 2, 0.75))!important;
 }

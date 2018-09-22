@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Quecompra.cl</title>
+    <link rel="shortcut icon" href="img/favicon-web.png" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -32,7 +33,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/iconos/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
     <!-- Driff Chatbot -->
     <!-- Start of Async Drift Code -->
     <script>
@@ -64,6 +64,9 @@
         drift.load('dzsnxcngpn7x');
     </script>
     <!-- End of Async Drift Code -->
+
+    <!-- Recaptcha Google -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -106,31 +109,31 @@
         </nav>
 
         <!-- Intro Section -->
-        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('img/bg-paralax.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('img/bg-paralax.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <div class="mask">
                 <div class="container h-100 d-flex justify-content-center align-items-center">
                     <div class="row pt-5 mt-3">
                         <div class="col-md-10 col-sm-12 wow fadeIn mb-3 m-auto">
-                            <div class="text-center">
-                                <h1 class="display-4 font-weight-bold mb-5 wow fadeInUp white-text">Súmate tu también</h1>
+                            <div class="text-center w-100">
+                                <h1 class="display-4 font-weight-bold mb-4 wow fadeInUp white-text">Súmate al eCommerce</h1>
                                 </li>
-                                <h5 class="mb-5 wow fadeInUp white-text text-uppercase" data-wow-delay="0.2s">La primera plataforma <u class="font-weight-bold">colaborativa</u> para pymes y emprendedores al mundo del comercio electrónico en Chile</h5>
+                                <h5 class="mb-5 wow fadeInUp white-text text-uppercase col-12" data-wow-delay="0.2s">La plataforma <span class="font-weight-bold">colaborativa</span> que tú, pymes y emprendedores necesitan para conectarse con el comercio electrónico</h5>
                                 <div class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeInUp; animation-delay: 0.4s;">
-                                    <a class="btn btn-qc-1 btn-rounded waves-effect waves-light font-weight-bold" data-toggle="modal" data-target="#darkModalForm"><i class="fa fa-user-o left"></i> SUSCRÍBETE AQUÍ</a>
-                                    <a class="btn btn-outline-white btn-rounded font-weight-bold"><i class="fa fa-book left"></i> APRENDE MÁS</a>
+                                    <a class="btn btn-qc-1 btn-rounded waves-effect waves-light font-weight-bold" data-toggle="modal" data-target="#modalYT"><i class="fa fa-play left"></i> VER VIDEO</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <span class="line-down d-none d-sm-block"></span>
         </div>
-        <!-- Modal -->
+        <!-- Modal Suscripcion -->
         <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog form-dark" role="document">
                 <!--Content-->
-                <div class="modal-content rounded card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg');">
-                    <div class="text-white rgba-stylish-strong py-4 px-4 z-depth-4">
+                <div class="modal-content rounded card card-image" style="background-image: url('../img/bg-paralax.jpg');">
+                    <div class="text-white rgba-stylish-strong py-4 px-4">
                         <!--Header-->
                         <div class="modal-header text-center pb-1">
                             <h4 class="modal-title w-100 white-text font-weight-bold h4-responsive" id="myModalLabel"><strong>RECIBE NOVEDADES</strong></a>
@@ -143,13 +146,13 @@
                         <div class="modal-body p-0">
                             <!--Body-->
                             <div class="md-form mb-0">
-                                <input type="text" id="form-name" class="form-control validate white-text mb-2">
-                                <label data-error="Error" data-success="Correcto" for="form-name">Nombre y Apellido</label>
+                                <input type="text" id="form-name" class="form-control white-text mb-4">
+                                <label for="form-name">Nombre y Apellido</label>
                             </div>
 
                             <div class="md-form pb-3">
-                                <input type="email" id="form-email" class="form-control validate white-text mb-3">
-                                <label data-error="Error" data-success="Correcto" for="form-email">Correo Electrónico</label>
+                                <input type="email" id="form-email" class="form-control white-text mb-3">
+                                <label for="form-email">Correo Electrónico</label>
                                 <div class="form-group mt-2">
                                     <input class="form-check-input" type="checkbox" id="checkbox624">
                                     <label for="checkbox624" class="white-text form-check-label">Acepto <span class="font-weight-bold"> recibir información vía email.</span></label>
@@ -174,489 +177,550 @@
                 <!--/.Content-->
             </div>
         </div>
-        <!-- Modal -->
+        <!-- Modal Suscripcion -->
+
+        <!--Modal: modalYT-->
+        <div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+
+                <!--Content-->
+                <div class="modal-content">
+
+                    <!--Body-->
+                    <div class="modal-body mb-0 p-0">
+
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center flex-column flex-md-row">
+                        <span class="mr-4 grey-color">Comparte!</span>
+                        <div>
+                            <a type="button" class="btn-floating btn-sm btn-fb">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Cerrar</button>
 
 
+                    </div>
+
+                </div>
+                <!--/.Content-->
+
+            </div>
+        </div>
+        <!--Modal: modalYT-->
     </header>
     <!--Main Navigation-->
 
     <!--Main Layout-->
     <main>
+        <!--Container Fluid-->
+        <div class="container-fluid">
+            <!--Container-->
+            <div class="container">
+                <!-- Section: Features v.3 -->
+                <section id="section1" class="my-4 pt-4 pb-5">
 
-        <div class="container">
+                    <!-- Section heading -->
+                    <h2 class="h1-responsive font-weight-bold text-center my-5">¿Para qué es?</h2>
+                    <!-- Grid row -->
+                    <div class="row">
 
-            <!-- Section: Features v.3 -->
-            <section id="section1" class="my-4 pt-4 pb-5">
-
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold text-center my-5">¿Para qué es?</h2>
-                <!-- Grid row -->
-                <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-lg-5 text-center text-lg-left">
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-lg-7">
-
-                        <!-- Grid row -->
-                        <div class="row mb-3">
-
-                            <!-- Grid column -->
-                            <div class="col-1">
-                                <i class="fa fa-mail-forward fa-lg orange-color"></i>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-xl-10 col-md-11 col-10">
-                                <h5 class="font-weight-bold mb-3">Safety</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-                            </div>
-                            <!-- Grid column -->
-
+                        <!-- Grid column -->
+                        <div class="col-lg-5 text-center text-lg-left">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
                         </div>
-                        <!-- Grid row -->
+                        <!-- Grid column -->
 
-                        <!-- Grid row -->
-                        <div class="row mb-3">
+                        <!-- Grid column -->
+                        <div class="col-lg-7">
 
-                            <!-- Grid column -->
-                            <div class="col-1">
-                                <i class="fa fa-mail-forward fa-lg orange-color"></i>
-                            </div>
-                            <!-- Grid column -->
+                            <!-- Grid row -->
+                            <div class="row mb-3">
 
-                            <!-- Grid column -->
-                            <div class="col-xl-10 col-md-11 col-10">
-                                <h5 class="font-weight-bold mb-3">Technology</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-                            </div>
-                            <!-- Grid column -->
-
-                        </div>
-                        <!-- Grid row -->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!-- Grid column -->
-                            <div class="col-1">
-                                <i class="fa fa-mail-forward fa-lg orange-color"></i>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-xl-10 col-md-11 col-10">
-                                <h5 class="font-weight-bold mb-3">Finance</h5>
-                                <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
-                            </div>
-                            <!-- Grid column -->
-
-                        </div>
-                        <!--Grid row-->
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!-- Grid row -->
-
-            </section>
-            <!-- Section: Features v.3 -->
-
-            <hr>
-
-            <!--Section: Testimonials v.3-->
-            <section id="section2" class="section team-section text-center pb-3 wow fadeIn my-4 pt-4 pb-5" data-wow-delay="0.3s">
-
-                <!--Section heading-->
-                <h1 class="h1-responsive font-weight-bold text-center my-5">¿Para quién es?</h1>
-                <!--Grid row-->
-                <div class="row text-center">
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-4">
-
-                        <div class="testimonial">
-                            <!--Avatar-->
-                            <div class="avatar mx-auto">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
-                            </div>
-
-                            <!--Content-->
-                            <h4 class="font-weight-bold mt-4 mb-3">PYMES</h4>
-                            <h6 class="mb-3 font-weight-bold grey-text">Pequeñas y Medianas Empresas</h6>
-                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-
-                            <!--Review-->
-                            <div class="orange-text">
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star-half-full"> </i>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-4">
-                        <div class="testimonial">
-                            <!--Avatar-->
-                            <div class="avatar mx-auto">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1 img-fluid">
-                            </div>
-
-                            <!--Content-->
-                            <h4 class="font-weight-bold mt-4 mb-3">Emprendedores</h4>
-                            <h6 class="mb-3 font-weight-bold grey-text">Web Developer</h6>
-                            <p><i class="fa fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
-
-                            <!--Review-->
-                            <div class="orange-text">
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-4">
-                        <div class="testimonial">
-                            <!--Avatar-->
-                            <div class="avatar mx-auto">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
-                            </div>
-                            <!--Content-->
-                            <h4 class="font-weight-bold mt-4 mb-3">Independientes</h4>
-                            <h6 class="mb-3 font-weight-bold grey-text">Photographer</h6>
-                            <p><i class="fa fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
-
-                            <!--Review-->
-                            <div class="orange-text">
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star-o"> </i>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Testimonials v.3-->
-
-            <hr>
-
-            <!-- Section: Pricing v.3 -->
-            <section id="section3" class="text-center my-4 pt-4 pb-5 wow fadeIn" data-wow-delay="0.3s">
-
-                <!-- Section heading -->
-                <h2 class="h1-responsive font-weight-bold text-center my-5">¿Cómo funciona?</h2>
-                <!-- Timeline -->
-                <div class="row mt-5">
-                    <div class="col-md-12">
-
-                        <!-- Timeline Wrapper -->
-                        <ul class="stepper stepper-vertical timeline pl-0">
-
-                            <li>
-                                <!--Section Title -->
-                                <a href="#!">
-                                    <span class="circle primary-color z-depth-1-half"><i class="fa fa-check" aria-hidden="true"></i></span>
-                                </a>
-
-                                <!-- Section Description -->
-                                <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
-                                    <h4 class="font-weight-bold">Duis aute irure dolor</h4>
-                                    <p class=" mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                <!-- Grid column -->
+                                <div class="col-1">
+                                    <i class="fa fa-mail-forward fa-lg orange-color"></i>
                                 </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <!--Section Title -->
-                                <a href="#!">
-                                    <span class="circle warning-color z-depth-1-half"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
-                                </a>
+                                <!-- Grid column -->
 
-                                <!-- Section Description -->
-                                <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
-                                    <h4 class="font-weight-bold">Duis aute irure dolor</h4>
-                                    <p class=" mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                <!-- Grid column -->
+                                <div class="col-xl-10 col-md-11 col-10">
+                                    <h5 class="font-weight-bold mb-3">Safety</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
                                 </div>
-                            </li>
-                            <li>
-                                <!--Section Title -->
-                                <a href="#!">
-                                    <span class="circle danger-color z-depth-1-half"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
-                                </a>
+                                <!-- Grid column -->
 
-                                <!-- Section Description -->
-                                <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
-                                    <h4 class="font-weight-bold">Sed ut nihil unde omnis</h4>
-                                    <p class="mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Grid row -->
+                            <div class="row mb-3">
+
+                                <!-- Grid column -->
+                                <div class="col-1">
+                                    <i class="fa fa-mail-forward fa-lg orange-color"></i>
                                 </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <!--Section Title -->
-                                <a href="#!">
-                                    <span class="circle info-color z-depth-1-half"><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
-                                </a>
+                                <!-- Grid column -->
 
-                                <!-- Section Description -->
-                                <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
-                                    <h4 class="font-weight-bold"> Quis autem vel eum voluptate</h4>
-                                    <p class="mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                <!-- Grid column -->
+                                <div class="col-xl-10 col-md-11 col-10">
+                                    <h5 class="font-weight-bold mb-3">Technology</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
                                 </div>
-                            </li>
-                            <li>
-                                <!--Section Title -->
-                                <a href="#!">
-                                    <span class="circle success-color z-depth-1-half"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                                </a>
+                                <!-- Grid column -->
 
-                                <!-- Section Description -->
-                                <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
-                                    <h4 class="font-weight-bold grey-color">Mussum ipsum cacilds</h4>
-                                    <p class="mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- Timeline Wrapper -->
-
-                    </div>
-                </div>
-                <!-- Timeline -->
-
-            </section>
-            <!-- Section: Pricing v.3 -->
-
-            <hr>
-
-            <!--Section: Features v.4-->
-            <section id="section4" class="section wow fadeIn my-4 pt-4 pb-5" data-wow-delay="0.3s">
-
-                <!--Section heading-->
-                <h1 class="h1-responsive font-weight-bold text-center my-5">Beneficios</h1>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-4">
-
-                        <!--Grid row-->
-                        <div class="row mb-2">
-                            <div class="col-2">
-                                <i class="fa fa-2x fa-flag-checkered orange-color"></i>
                             </div>
-                            <div class="col-10">
-                                <h5 class="font-weight-bold mb-4 grey-color">¿Para quién es?</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row mb-2">
-                            <div class="col-2">
-                                <i class="fa fa-2x fa-flask orange-color"></i>
-                            </div>
-                            <div class="col-10">
-                                <h5 class="font-weight-bold mb-4 grey-color">¿Cómo funciona?</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row mb-2">
-                            <div class="col-2">
-                                <i class="fa fa-2x fa-glass orange-color"></i>
-                            </div>
-                            <div class="col-10">
-                                <h5 class="font-weight-bold mb-4 grey-color">Relaxing</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4 mb-2 text-center text-md-left flex-center">
-                        <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png" alt="" class="z-depth-0">
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-4">
-
-                        <!--Grid row-->
-                        <div class="row mb-2">
-                            <div class="col-2">
-                                <i class="fa fa-2x fa-heart orange-color"></i>
-                            </div>
-                            <div class="col-10">
-                                <h5 class="font-weight-bold mb-4 grey-color">Beloved</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row mb-2">
-                            <div class="col-2">
-                                <i class="fa fa-2x fa-flash orange-color"></i>
-                            </div>
-                            <div class="col-10">
-                                <h5 class="font-weight-bold mb-4 grey-color">Rapid</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row mb-2">
-                            <div class="col-2">
-                                <i class="fa fa-2x fa-magic orange-color"></i>
-                            </div>
-                            <div class="col-10">
-                                <h5 class="font-weight-bold mb-4 grey-color">Magical</h5>
-                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--/Section: Features v.4-->
-
-            <hr>
-
-            <!--Section: Contact v.2-->
-            <section id="section5" class="section my-4 pt-4 pb-5 wow fadeIn" data-wow-delay="0.3s">
-
-                <!--Section heading-->
-                <h2 class="font-weight-bold text-center h1-responsive my-5">Me interesa, deseo más información</h2>
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-8 col-xl-9">
-                        <form>
+                            <!-- Grid row -->
 
                             <!--Grid row-->
                             <div class="row">
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <input type="text" id="contact-name" class="form-control">
-                                        <label for="contact-name" class="">Nombre y Apellido</label>
-                                    </div>
+                                <!-- Grid column -->
+                                <div class="col-1">
+                                    <i class="fa fa-mail-forward fa-lg orange-color"></i>
                                 </div>
-                                <!--Grid column-->
+                                <!-- Grid column -->
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <input type="text" id="contact-email" class="form-control">
-                                        <label for="contact-email" class="">Correo Electrónico</label>
-                                    </div>
+                                <!-- Grid column -->
+                                <div class="col-xl-10 col-md-11 col-10">
+                                    <h5 class="font-weight-bold mb-3">Finance</h5>
+                                    <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
                                 </div>
-                                <!--Grid column-->
+                                <!-- Grid column -->
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <select class="mdb-select md-form type-user-form">
-                                        <option value="" disabled selected>Tipo de usuario</option>
+                            </div>
+                            <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </section>
+                <!-- Section: Features v.3 -->
+
+                <hr>
+
+                <!--Section: Testimonials v.3-->
+                <section id="section2" class="section team-section text-center pb-3 wow fadeIn my-4 pt-4 pb-5" data-wow-delay="0.3s">
+
+                    <!--Section heading-->
+                    <h1 class="h1-responsive font-weight-bold text-center my-5">¿Para quién es?</h1>
+                    <!--Grid row-->
+                    <div class="row text-center">
+
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
+                                </div>
+
+                                <!--Content-->
+                                <h4 class="font-weight-bold mt-4 mb-3">PYMES</h4>
+                                <h6 class="mb-3 font-weight-bold grey-text">Pequeñas y Medianas Empresas</h6>
+                                <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+
+                                <!--Review-->
+                                <div class="orange-text">
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star-half-full"> </i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1 img-fluid">
+                                </div>
+
+                                <!--Content-->
+                                <h4 class="font-weight-bold mt-4 mb-3">Emprendedores</h4>
+                                <h6 class="mb-3 font-weight-bold grey-text">Web Developer</h6>
+                                <p><i class="fa fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+                                <!--Review-->
+                                <div class="orange-text">
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
+                                </div>
+                                <!--Content-->
+                                <h4 class="font-weight-bold mt-4 mb-3">Independientes</h4>
+                                <h6 class="mb-3 font-weight-bold grey-text">Photographer</h6>
+                                <p><i class="fa fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+
+                                <!--Review-->
+                                <div class="orange-text">
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star-o"> </i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                </section>
+                <!--Section: Testimonials v.3-->
+
+                <hr>
+
+                <!-- Section: Pricing v.3 -->
+                <section id="section3" class="text-center my-4 pt-4 pb-5 wow fadeIn" data-wow-delay="0.3s">
+
+                    <!-- Section heading -->
+                    <h2 class="h1-responsive font-weight-bold text-center my-5">¿Cómo funciona?</h2>
+                    <!-- Timeline -->
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+
+                            <!-- Timeline Wrapper -->
+                            <ul class="stepper stepper-vertical timeline pl-0">
+
+                                <li>
+                                    <!--Section Title -->
+                                    <a href="#!">
+                                        <span class="circle primary-color z-depth-1-half"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    </a>
+
+                                    <!-- Section Description -->
+                                    <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
+                                        <h4 class="font-weight-bold">Duis aute irure dolor</h4>
+                                        <p class=" mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <!--Section Title -->
+                                    <a href="#!">
+                                        <span class="circle warning-color z-depth-1-half"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
+                                    </a>
+
+                                    <!-- Section Description -->
+                                    <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
+                                        <h4 class="font-weight-bold">Duis aute irure dolor</h4>
+                                        <p class=" mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!--Section Title -->
+                                    <a href="#!">
+                                        <span class="circle danger-color z-depth-1-half"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                                    </a>
+
+                                    <!-- Section Description -->
+                                    <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
+                                        <h4 class="font-weight-bold">Sed ut nihil unde omnis</h4>
+                                        <p class="mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <!--Section Title -->
+                                    <a href="#!">
+                                        <span class="circle info-color z-depth-1-half"><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
+                                    </a>
+
+                                    <!-- Section Description -->
+                                    <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
+                                        <h4 class="font-weight-bold"> Quis autem vel eum voluptate</h4>
+                                        <p class="mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!--Section Title -->
+                                    <a href="#!">
+                                        <span class="circle success-color z-depth-1-half"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                    </a>
+
+                                    <!-- Section Description -->
+                                    <div class="step-content z-depth-1 ml-xl-0 p-4 text-left">
+                                        <h4 class="font-weight-bold grey-color">Mussum ipsum cacilds</h4>
+                                        <p class="mt-4 mb-0 grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Timeline Wrapper -->
+
+                        </div>
+                    </div>
+                    <!-- Timeline -->
+
+                </section>
+                <!-- Section: Pricing v.3 -->
+
+                <hr>
+
+                <!--Section: Features v.4-->
+                <section id="section4" class="section wow fadeIn my-4 pt-4 pb-5" data-wow-delay="0.3s">
+
+                    <!--Section heading-->
+                    <h1 class="h1-responsive font-weight-bold text-center my-5">Beneficios</h1>
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-4">
+
+                            <!--Grid row-->
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <i class="fa fa-2x fa-flag-checkered orange-color"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="font-weight-bold mb-4 grey-color">¿Para quién es?</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <i class="fa fa-2x fa-flask orange-color"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="font-weight-bold mb-4 grey-color">¿Cómo funciona?</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <i class="fa fa-2x fa-glass orange-color"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="font-weight-bold mb-4 grey-color">Relaxing</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-2 text-center text-md-left flex-center">
+                            <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png" alt="" class="z-depth-0">
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4">
+
+                            <!--Grid row-->
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <i class="fa fa-2x fa-heart orange-color"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="font-weight-bold mb-4 grey-color">Beloved</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <i class="fa fa-2x fa-flash orange-color"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="font-weight-bold mb-4 grey-color">Rapid</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <i class="fa fa-2x fa-magic orange-color"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h5 class="font-weight-bold mb-4 grey-color">Magical</h5>
+                                    <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda.</p>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                </section>
+                <!--/Section: Features v.4-->
+
+                <hr>
+
+                <!--Section: Contact v.2-->
+                <section id="section5" class="section my-4 pt-4 pb-5 wow fadeIn" data-wow-delay="0.3s">
+
+                    <!--Section heading-->
+                    <h2 class="font-weight-bold text-center h1-responsive my-5">Me interesa, deseo contactarme</h2>
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-8 col-xl-9">
+                            <form>
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="text" id="contact-name" class="form-control">
+                                            <label for="contact-name" class="">Nombre y Apellido</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="text" id="contact-email" class="form-control">
+                                            <label for="contact-email" class="">Correo Electrónico</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <select class="mdb-select md-form type-user-form">
+                                        <option value="" disabled selected>Usuario / Cliente</option>
                                         <option value=""data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle">PYME</option>
                                         <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle">Emprendedor</option>
                                         <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">Idependiente</option>
                                         <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" class="rounded-circle">Otro</option>
                                     </select>
-                                </div>
-                                <!--Grid column-->
+                                    </div>
+                                    <!--Grid column-->
 
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <input type="tel" id="contact-number" class="form-control">
-                                        <label for="contact-number" class="">Teléfono</label>
+                                    <!--Grid column-->
+                                    <div class="col-md-6">
+                                        <div class="md-form">
+                                            <input type="tel" id="contact-number" class="form-control">
+                                            <label for="contact-number" class="">Teléfono</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-md-12">
+
+                                        <div class="md-form">
+                                            <textarea type="text" id="contact-message" class="md-textarea form-control" rows="3"></textarea>
+                                            <label for="contact-message">Escríbenos...</label>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <!--Grid column-->
+                                <!--Grid row-->
 
-                            </div>
-                            <!--Grid row-->
+                                <!--Grid row Recaptcha-->
+                                <div class="row">
 
-                            <!--Grid row-->
-                            <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-12 mt-2">
 
-                                <!--Grid column-->
-                                <div class="col-md-12">
+                                        <div class="g-recaptcha" data-sitekey="6Lf6inEUAAAAAHPIOH3o0R_NF_CXzAqV7ZY6TFQR"></div>
 
-                                    <div class="md-form">
-                                        <textarea type="text" id="contact-message" class="md-textarea form-control" rows="3"></textarea>
-                                        <label for="contact-message">Escríbenos...</label>
                                     </div>
-
                                 </div>
+                                <!--Grid row-->
+
+
+                            </form>
+
+                            <div class="text-center text-md-left my-4">
+                                <a class="btn gradient-orange white-text btn-rounded font-weight-bold">Enviar</a>
                             </div>
-                            <!--Grid row-->
-
-                        </form>
-
-                        <div class="text-center text-md-left my-4">
-                            <a class="btn gradient-orange white-text btn-rounded font-weight-bold">Enviar</a>
                         </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 col-xl-3">
+                            <ul class="contact-icons text-center list-unstyled">
+                                <li><i class="fa fa-map-marker fa-2x orange-color"></i>
+                                    <p>Ñuñoa 1401,<br> Santiago de Chile</p>
+                                </li>
+                                <br>
+                                <li><i class="fa fa-phone fa-2x orange-color"></i>
+                                    <p>+569 9 3819 841 <br> +569 9 3819 842</p>
+                                </li>
+                                <br>
+                                <li><i class="fa fa-envelope fa-2x orange-color"></i>
+                                    <p><a href="mailto:info@quecompra.cl" class="link-text">info@quecompra.cl</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
                     </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
-                    <div class="col-md-4 col-xl-3">
-                        <ul class="contact-icons text-center list-unstyled">
-                            <li><i class="fa fa-map-marker fa-2x orange-color"></i>
-                                <p>Ñuñoa 1401,<br> Santiago de Chile</p>
-                            </li>
-                            <br>
-                            <li><i class="fa fa-phone fa-2x orange-color"></i>
-                                <p>+569 9 3819 841 <br> +569 9 3819 842</p>
-                            </li>
-                            <br>
-                            <li><i class="fa fa-envelope fa-2x orange-color"></i>
-                                <p><a href="mailto:info@quecompra.cl" class="link-text">info@quecompra.cl</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-
-            </section>
-            <!--Section: Contact v.2-->
-
+                </section>
+                <!--Section: Contact v.2-->
+            </div>
+            <!--Container-->
         </div>
-
+        <!--Container Fluid-->
     </main>
     <!--Main Layout-->
 

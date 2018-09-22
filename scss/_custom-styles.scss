@@ -15,7 +15,36 @@ header,
 /* PARALAX */
 
 .mask {
-    @include gradient-qc;
+    @include gradient-qc-o;
+}
+
+.line-down {
+    position: absolute;
+    height: 130px;
+    width: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    z-index: 100;
+    &::after {
+        content: "";
+        height: 130;
+        width: 2px;
+        position: absolute;
+        background: transparent;
+        box-shadow: 130px 0 0 white inset;
+        animation: lineDown 1s infinite alternate-reverse;
+    }
+}
+
+@keyframes lineDown {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 130px;
+    }
 }
 
 @media (max-width: 740px) {
@@ -158,6 +187,10 @@ header,
     @include gradient-qc;
 }
 
+.rgba-stylish-strong {
+    background: $grey-qc-o; //Background Modal Suscripcion
+}
+
 //Anclas
 .link-text {
     color: $orange-qc!important;
@@ -182,6 +215,8 @@ p {
     top: 10px;
 }
 
+//Material Color 
+$primary-color: $orange-qc!important;
 
 /* MODAL FORM */
 
