@@ -16535,17 +16535,22 @@ section.team-section .avatar img {
   .contact-section .contact .fa {
     color: #6b89a5; }
 
+/* SETTINGS */
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; }
+
+/* PARALAX */
 html,
 body,
 header,
 .jarallax {
-  height: 100vh;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 500;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  height: 100vh; }
 
-/* PARALAX */
 .mask {
   background: -webkit-gradient(linear, -90deg, from(#ff6348), to(rgba(255, 166, 2, 0.75))) !important;
   background: -webkit-linear-gradient(-90deg, #ff6348, rgba(255, 166, 2, 0.75)) !important;
@@ -16624,10 +16629,14 @@ header,
     background: linear-gradient(to 90deg, #ff6348, #ff7f50);
     -webkit-border-radius: 20px;
     border-radius: 20px; }
+  .navbar .nav-link {
+    padding: .2rem 1rem;
+    font-weight: 500; }
+    .navbar .nav-link:hover {
+      opacity: 1; }
 
 .top-nav-collapse {
-  background-color: #2f3542;
-  /* background-image: linear-gradient(120deg, #f15a24 0%, #f7931e 50%, #fbb03b 100%); */ }
+  background-color: #2f3542; }
 
 .navbar:not(.top-nav-collapse) {
   background: #2f3542 !important; }

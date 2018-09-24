@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:500,600,700');
-// Your custom styles
+
+/* SETTINGS */
+
+html,
+body,
+{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+
+/* PARALAX */
+
 html,
 body,
 header,
 .jarallax {
     height: 100vh;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
-
-
-/* PARALAX */
 
 .mask {
     @include gradient-qc-o;
@@ -93,11 +101,17 @@ header,
         background: linear-gradient(to 90deg, $orange-qc, $orange-2-qc);
         border-radius: 20px;
     }
+    & .nav-link {
+        padding: .2rem 1rem;
+        font-weight: 500;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 .top-nav-collapse {
     background-color: $grey-qc;
-    /* background-image: linear-gradient(120deg, #f15a24 0%, #f7931e 50%, #fbb03b 100%); */
 }
 
 .navbar:not(.top-nav-collapse) {

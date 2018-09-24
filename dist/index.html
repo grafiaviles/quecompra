@@ -69,13 +69,13 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="0">
 
     <!--Main Navigation-->
     <header>
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="img/svg/logo-light.svg" width="190" alt="">
@@ -98,9 +98,9 @@
                             <a class="nav-link px-3" href="#section4">Beneficios</a>
                         </li>
                         <li class="nav-item btn-rounded waves-effect waves-light">
-                            <a class="nav-link px-3" href="#section5" data-toggle="modal" data-target="#darkModalForm">Me interesa</a>
+                            <a class="nav-link px-3" href="#section5">Me interesa</a>
                         </li>
-                        <li class="nav-item btn-rounded waves-effect waves-light active">
+                        <li class="nav-item btn-rounded waves-effect waves-light">
                             <a class="nav-link px-3" href="#" data-toggle="modal" data-target="#darkModalForm">Suscríbete</a>
                         </li>
                     </ul>
@@ -236,8 +236,7 @@
             <!--Container-->
             <div class="container">
                 <!-- Section: Features v.3 -->
-                <section id="section1" class="my-4 pt-4 pb-5">
-
+                <section id="section1" class="my-4 pt-5 pb-5">
                     <!-- Section heading -->
                     <h2 class="h1-responsive font-weight-bold text-center my-5">¿Para qué es?</h2>
                     <!-- Grid row -->
@@ -321,7 +320,7 @@
                 <hr>
 
                 <!--Section: Testimonials v.3-->
-                <section id="section2" class="section team-section text-center pb-3 wow fadeIn my-4 pt-4 pb-5" data-wow-delay="0.3s">
+                <section id="section2" class="section team-section text-center pb-3 wow fadeIn my-4 pt-5 pb-5" data-wow-delay="0.3s">
 
                     <!--Section heading-->
                     <h1 class="h1-responsive font-weight-bold text-center my-5">¿Para quién es?</h1>
@@ -413,7 +412,7 @@
                 <hr>
 
                 <!-- Section: Pricing v.3 -->
-                <section id="section3" class="text-center my-4 pt-4 pb-5 wow fadeIn" data-wow-delay="0.3s">
+                <section id="section3" class="text-center my-4 pt-5 pb-5 wow fadeIn" data-wow-delay="0.3s">
 
                     <!-- Section heading -->
                     <h2 class="h1-responsive font-weight-bold text-center my-5">¿Cómo funciona?</h2>
@@ -497,7 +496,7 @@
                 <hr>
 
                 <!--Section: Features v.4-->
-                <section id="section4" class="section wow fadeIn my-4 pt-4 pb-5" data-wow-delay="0.3s">
+                <section id="section4" class="section wow fadeIn my-4 pt-5 pb-5" data-wow-delay="0.3s">
 
                     <!--Section heading-->
                     <h1 class="h1-responsive font-weight-bold text-center my-5">Beneficios</h1>
@@ -604,7 +603,7 @@
                 <hr>
 
                 <!--Section: Contact v.2-->
-                <section id="section5" class="section my-4 pt-4 pb-5 wow fadeIn" data-wow-delay="0.3s">
+                <section id="section5" class="section my-4 pt-5 pb-5 wow fadeIn" data-wow-delay="0.3s">
 
                     <!--Section heading-->
                     <h2 class="font-weight-bold text-center h1-responsive my-5">Me interesa, deseo contactarme</h2>
@@ -864,6 +863,9 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script>
         $('.mdb-select').material_select();
+        $('body').scrollspy({
+            target: '#navbar-scrollspy'
+        })
     </script>
 </body>
 
