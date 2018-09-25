@@ -201,10 +201,6 @@ header,
     @include gradient-qc;
 }
 
-.rgba-stylish-strong {
-    background: $grey-qc-o; //Background Modal Suscripcion
-}
-
 //Anclas
 .link-text {
     color: $orange-qc!important;
@@ -238,6 +234,10 @@ $primary-color: $orange-qc!important;
     font-size: 0.8rem;
 }
 
+.rgba-white-strong {
+    background-color: $white-qc-o!important;
+}
+
 .form-dark [type="radio"]+label,
 .form-dark [type="checkbox"]+label {
     font-size: 0.8rem;
@@ -250,7 +250,7 @@ $primary-color: $orange-qc!important;
 }
 
 .form-dark .md-form label {
-    color: #fff;
+    color: grey;
 }
 
 .form-dark input[type=email]:focus:not([readonly]) {
@@ -260,7 +260,7 @@ $primary-color: $orange-qc!important;
 }
 
 .form-dark input[type=email]:focus:not([readonly])+label {
-    color: #fff;
+    color: $grey-qc;
 }
 
 .form-dark input[type=text]:focus:not([readonly]) {
@@ -270,7 +270,7 @@ $primary-color: $orange-qc!important;
 }
 
 .form-dark input[type=text]:focus:not([readonly])+label {
-    color: #fff;
+    color: $grey-qc;
 }
 
 .form-dark input[type="checkbox"]+label:before {
@@ -281,7 +281,7 @@ $primary-color: $orange-qc!important;
     width: 17px;
     height: 17px;
     z-index: 0;
-    border: 1.5px solid #fff;
+    border: 1.5px solid #9e9e9e;
     border-radius: 1px;
     margin-top: 2px;
     -webkit-transition: 0.2s;

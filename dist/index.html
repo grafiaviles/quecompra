@@ -97,11 +97,8 @@
                         <li class="nav-item btn-rounded waves-effect waves-light">
                             <a class="nav-link px-3" href="#section4">Beneficios</a>
                         </li>
-                        <li class="nav-item btn-rounded waves-effect waves-light">
+                        <li class="nav-item btn-rounded waves-effect waves-light active">
                             <a class="nav-link px-3" href="#section5">Me interesa</a>
-                        </li>
-                        <li class="nav-item btn-rounded waves-effect waves-light">
-                            <a class="nav-link px-3" href="#" data-toggle="modal" data-target="#darkModalForm">Suscríbete</a>
                         </li>
                     </ul>
                 </div>
@@ -132,30 +129,31 @@
         <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog form-dark" role="document">
                 <!--Content-->
-                <div class="modal-content rounded card card-image" style="background-image: url('../img/bg-paralax.jpg');">
-                    <div class="text-white rgba-stylish-strong py-4 px-4">
+                <div class="modal-content rounded card card-image" style="background-image: url('../img/bg-modal.jpg');">
+                    <div class="py-4 px-4">
                         <!--Header-->
                         <div class="modal-header text-center pb-1">
-                            <h4 class="modal-title w-100 white-text font-weight-bold h4-responsive" id="myModalLabel"><strong>RECIBE NOVEDADES</strong></a>
+                            <h4 class="modal-title w-100 grey-color h4-responsive" id="myModalLabel"><strong>Recibe beneficios, novedades y más...
+                                </strong></a>
                             </h4>
-                            <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close grey-text" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <!--Body-->
                         <div class="modal-body p-0">
                             <!--Body-->
-                            <div class="md-form mb-0">
-                                <input type="text" id="form-name" class="form-control white-text mb-4">
-                                <label for="form-name">Nombre y Apellido</label>
+                            <div class="md-form">
+                                <input type="text" id="form-name" class="form-control grey-color mb-4">
+                                <label class="grey-text" for="form-name">Nombre y Apellido</label>
                             </div>
 
-                            <div class="md-form pb-3">
-                                <input type="email" id="form-email" class="form-control white-text mb-3">
-                                <label for="form-email">Correo Electrónico</label>
+                            <div class="md-form pb-1">
+                                <input type="email" id="form-email" class="form-control grey-color mb-3">
+                                <label class="grey-text" for="form-email">Correo Electrónico</label>
                                 <div class="form-group mt-2">
                                     <input class="form-check-input" type="checkbox" id="checkbox624">
-                                    <label for="checkbox624" class="white-text form-check-label">Acepto <span class="font-weight-bold"> recibir información vía email.</span></label>
+                                    <label for="checkbox624" class="grey-text form-check-label">Acepto recibir información vía email.</label>
                                 </div>
                             </div>
 
@@ -163,8 +161,8 @@
                             <div class="row d-flex align-items-center mb-2">
 
                                 <!--Grid column-->
-                                <div class="text-center mb-3 col-sm-12">
-                                    <button type="button" class="btn btn-success btn-block btn-rounded gradient-orange font-weight-bold">ENVIAR</button>
+                                <div class="text-center mb-2 col-md-4 col-sm-12">
+                                    <button type="submit" class="btn btn-success btn-block btn-rounded gradient-orange font-weight-bold">ENVIAR</button>
                                 </div>
                                 <!--Grid column-->
 
@@ -189,7 +187,7 @@
                     <!--Body-->
                     <div class="modal-body mb-0 p-0">
 
-                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
                         </div>
 
@@ -426,7 +424,7 @@
                                 <li>
                                     <!--Section Title -->
                                     <a href="#!">
-                                        <span class="circle primary-color z-depth-1-half"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                        <span class="circle primary-color z-depth-1"><i class="fa fa-check" aria-hidden="true"></i></span>
                                     </a>
 
                                     <!-- Section Description -->
@@ -438,7 +436,7 @@
                                 <li class="timeline-inverted">
                                     <!--Section Title -->
                                     <a href="#!">
-                                        <span class="circle warning-color z-depth-1-half"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
+                                        <span class="circle warning-color z-depth-1"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
                                     </a>
 
                                     <!-- Section Description -->
@@ -450,7 +448,7 @@
                                 <li>
                                     <!--Section Title -->
                                     <a href="#!">
-                                        <span class="circle danger-color z-depth-1-half"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                                        <span class="circle danger-color z-depth-1"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
                                     </a>
 
                                     <!-- Section Description -->
@@ -462,7 +460,7 @@
                                 <li class="timeline-inverted">
                                     <!--Section Title -->
                                     <a href="#!">
-                                        <span class="circle info-color z-depth-1-half"><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
+                                        <span class="circle info-color z-depth-1"><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
                                     </a>
 
                                     <!-- Section Description -->
@@ -474,7 +472,7 @@
                                 <li>
                                     <!--Section Title -->
                                     <a href="#!">
-                                        <span class="circle success-color z-depth-1-half"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+                                        <span class="circle success-color z-depth-1"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
                                     </a>
 
                                     <!-- Section Description -->
@@ -619,8 +617,8 @@
                                     <!--Grid column-->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" id="contact-name" class="form-control">
-                                            <label for="contact-name" class="">Nombre y Apellido</label>
+                                            <input type="text" id="data-name" class="form-control validate">
+                                            <label for="data-name" data-error="Error" data-success="Correcto">Nombre y Apellido</label>
                                         </div>
                                     </div>
                                     <!--Grid column-->
@@ -628,20 +626,20 @@
                                     <!--Grid column-->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="text" id="contact-email" class="form-control">
-                                            <label for="contact-email" class="">Correo Electrónico</label>
+                                            <input type="email" id="contact-email" class="form-control validate">
+                                            <label for="contact-email" data-error="Error" data-success="Correcto">Correo Electrónico</label>
                                         </div>
                                     </div>
                                     <!--Grid column-->
 
                                     <!--Grid column-->
                                     <div class="col-md-6">
-                                        <select class="mdb-select md-form type-user-form">
+                                        <select class="mdb-select md-form type-user-form validate" required>
                                         <option value="" disabled selected>Usuario / Cliente</option>
-                                        <option value=""data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle">PYME</option>
-                                        <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle">Emprendedor</option>
-                                        <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">Idependiente</option>
-                                        <option value="" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" class="rounded-circle">Otro</option>
+                                        <option value="pyme"data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg" class="rounded-circle">PYME</option>
+                                        <option value="emprendedor" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle">Emprendedor</option>
+                                        <option value="independiente" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-3.jpg" class="rounded-circle">Idependiente</option>
+                                        <option value="otro" data-icon="https://mdbootstrap.com/img/Photos/Avatars/avatar-4.jpg" class="rounded-circle">Otro</option>
                                     </select>
                                     </div>
                                     <!--Grid column-->
@@ -649,8 +647,8 @@
                                     <!--Grid column-->
                                     <div class="col-md-6">
                                         <div class="md-form">
-                                            <input type="tel" id="contact-number" class="form-control">
-                                            <label for="contact-number" class="">Teléfono</label>
+                                            <input type="tel" id="contact-number" class="form-control validate">
+                                            <label for="contact-number" data-error="Error" data-success="Correcto">Teléfono</label>
                                         </div>
                                     </div>
                                     <!--Grid column-->
@@ -665,8 +663,8 @@
                                     <div class="col-md-12">
 
                                         <div class="md-form">
-                                            <textarea type="text" id="contact-message" class="md-textarea form-control" rows="3"></textarea>
-                                            <label for="contact-message">Escríbenos...</label>
+                                            <textarea type="text" id="contact-message" class="md-textarea form-control validate" rows="3"></textarea>
+                                            <label for="contact-message" data-error="Error" data-success="Correcto">Escríbenos...</label>
                                         </div>
 
                                     </div>
@@ -689,7 +687,7 @@
                             </form>
 
                             <div class="text-center text-md-left my-4">
-                                <a class="btn gradient-orange white-text btn-rounded font-weight-bold">Enviar</a>
+                                <button class="btn gradient-orange white-text btn-rounded font-weight-bold" type="submit">ENVIAR</button>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -713,7 +711,6 @@
                         <!--Grid column-->
 
                     </div>
-
                 </section>
                 <!--Section: Contact v.2-->
             </div>
@@ -778,31 +775,33 @@
                     </h6>
                 </div>
                 <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a class="link-menu-footer" href="#!" data-toggle="modal" data-target="#darkModalForm">SUSCRÍBETE</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
             </div>
             <!-- Grid row-->
             <hr class="rgba-white-light" style="margin: 0 15%;">
+
+            <!-- Call to action -->
+            <ul class="list-unstyled list-inline text-center mt-5">
+                <li class="list-inline-item">
+                    <h5 class="mb-1">Recibe beneficios, novedades y más...</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#!" class="btn btn-info btn-rounded font-weight-bold z-depth-1-half" data-toggle="modal" data-target="#darkModalForm">Suscríbete</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
 
             <!-- Grid row-->
             <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
 
                 <!-- Grid column -->
-                <div class="col-md-8 col-12 mt-5">
-                    <p style="line-height: 1.7rem"><a class="link-text">Quecompra.cl</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                <div class="col-md-8 col-12 mt-2">
+                    <p style="line-height: 1.7rem" class="text-white-50"><a class="link-text">Quecompra.cl</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
                         dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
                 </div>
                 <!-- Grid column -->
 
             </div>
             <!-- Grid row-->
-            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
 
             <!-- Grid row-->
             <div class="row pb-3">
@@ -844,7 +843,7 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright
+        <div class="footer-copyright text-white-50 text-center py-3">© 2018 Copyright
             <a class="link-text" href="http://quecompra.cl/"> Quecompra.cl</a>
         </div>
         <!-- Copyright -->
@@ -865,7 +864,7 @@
         $('.mdb-select').material_select();
         $('body').scrollspy({
             target: '#navbar-scrollspy'
-        })
+        });
     </script>
 </body>
 
